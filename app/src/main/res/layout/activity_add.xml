@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FB5DCD8"
+    tools:context=".AddActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Profile"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#026056"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtName"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="3dp"
+        android:background="@drawable/edit_txt_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Full Name"
+            android:drawableEnd="@drawable/name"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtImg"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="3dp"
+        android:background="@drawable/edit_txt_bg"
+        app:layout_constraintEnd_toEndOf="@id/edtName"
+        app:layout_constraintStart_toStartOf="@id/edtName"
+        app:layout_constraintTop_toBottomOf="@+id/edtName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Image URL"
+            android:drawableEnd="@drawable/uri"
+            android:inputType="textUri"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtEmail"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="3dp"
+        android:background="@drawable/edit_txt_bg"
+        app:layout_constraintEnd_toEndOf="@id/edtImg"
+        app:layout_constraintStart_toStartOf="@id/edtImg"
+        app:layout_constraintTop_toBottomOf="@id/edtImg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Email Address"
+            android:drawableEnd="@drawable/email"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtPhone"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="3dp"
+        android:background="@drawable/edit_txt_bg"
+        app:layout_constraintEnd_toEndOf="@id/edtEmail"
+        app:layout_constraintStart_toStartOf="@id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Contact Number"
+            android:drawableEnd="@drawable/phone"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_bg"
+        android:elevation="30dp"
+        android:text="ADD DATA"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtPhone"
+        app:layout_constraintStart_toStartOf="@+id/edtPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
